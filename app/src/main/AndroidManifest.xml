@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dark.login_medical">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Medical"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Register" />
+        <activity
+            android:name=".Activities.Doctor"
+            android:label="Doctor Dashboard" />
+        <activity android:name=".Activities.doctor_fragment_display" />
+        <activity android:name=".Activities.EditProfile" />
+        <activity android:name=".Activities.Patient"
+            android:label="Patient Dashboard"/>
+
+        <activity android:name=".Activities.EmergencyDept.EmergencyDept"
+            android:label="Emergency Dept Dashboard"/>
+        <activity android:name=".Activities.EmergencyDept.call_respond" />
+        <activity android:name=".Activities.PharmacistDept.Pharmacist"
+            android:label="Pharmacist Dashboard"/>
+        <activity android:name=".Pharmacist.add_medicine" />
+        <activity android:name=".Pharmacist.Medicines" />
+        <activity android:name=".Pharmacist.edit_medicine" />
+        <activity android:name=".Pharmacist.Doctor_presc" />
+        <activity android:name=".Pharmacist.respond_doctor"></activity>
+    </application>
+
+</manifest>
